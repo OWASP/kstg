@@ -1,0 +1,6 @@
+[book]
+authors = ["Madhu Akula", "Abhisek Datta"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Kubernetes Security Testing Guide"
