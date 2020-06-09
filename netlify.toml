@@ -1,0 +1,3 @@
+[build]
+  command = "curl -fSLO https://github.com/rust-lang/mdBook/releases/download/v0.3.7/mdbook-v0.3.7-x86_64-unknown-linux-gnu.tar.gz && tar xvf mdbook-v0.3.7-x86_64-unknown-linux-gnu.tar.gz && mv mdbook /usr/local/bin/mdbook && cd mdbook && mdbook build"
+  publish = "mdbook/book"
