@@ -10,5 +10,6 @@
   - [Terminology](threat-model/terminology.md)
   - [Threat Actors](threat-model/actors.md)
   - [Trust Boundaries](threat-model/trust-boundaries.md)
+  - [System Architecture](threat-model/system-architecture.md)
   - [Using the Threat Model](threat-model/how-to-use.md)
 - [References & Resources](references-resources/readme.md)
