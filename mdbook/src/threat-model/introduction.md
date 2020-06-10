@@ -5,9 +5,9 @@
 Kubernetes is a complex, distributed system with multiple components. In order to perform an effective security testing, it is important to understand how different components interacts with each other and answer questions such as
 
 1. Who is an attacker?
-2. Where is the attacker located?
-3. What can the attacker see?
-4. How can an attacker gain access?
+2. Where are they located?
+3. What can they see?
+4. How can they gain access?
 
 We will present a high-level threat model in this document, which in turn will drive the different chapters in this document. The objective is to allow a tester to chose what is applicable and what is not based on the threat model and the level of access available to the tester.
 

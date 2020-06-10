@@ -1,1 +1,0 @@
-# CNCF Resources
