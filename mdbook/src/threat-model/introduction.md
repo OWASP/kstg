@@ -4,12 +4,15 @@
 
 Kubernetes is a complex, distributed system with multiple components. In order to perform an effective security testing, it is important to understand how different components interacts with each other and answer questions such as
 
-1. Who is an attacker?
-2. Where are they located?
-3. What can they see?
-4. How can they gain access?
+1. Who are the attackers?
+2. What can they attack?
+3. How can they attack?
 
 We will present a high-level threat model in this document, which in turn will drive the different chapters in this document. The objective is to allow a tester to chose what is applicable and what is not based on the threat model and the level of access available to the tester.
+
+A simple threat model is presented below as an example. The intention is to get testers started with thinking in terms of a threat model. The threat model is further expanded in subsequent chapters.
+
+![Simple Threat Model](../assets/images/simple-threat-model.png)
 
 A detailed threat model is already developed as part of a [security audit](https://github.com/kubernetes/community/tree/master/wg-security-audit) conducted by [Trail of Bits](https://www.trailofbits.com/) along with [Kubernetes Security Audit Working Group](https://github.com/kubernetes/community/tree/master/wg-security-audit). We refer to this threat model as required to conduct an effective security testing of a Kubernetes cluster.
 
