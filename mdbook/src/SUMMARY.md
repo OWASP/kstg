@@ -4,7 +4,7 @@
 - [Kubernetes Introduction](kubernetes/introduction.md)
   - [The Children's Illustrated Guide to Kubernetes](kubernetes/childrens-guide-to-kubernetes.md)
   - [High level overview of common resources](kubernetes/common-resources.md)
-  - [Creating a playground with Minikube + Docker](kubernetes/playground.md)
+  - [Creating a playground with Katacoda](kubernetes/playground.md)
   - [Hands-on common use-cases](kubernetes/hands-on-usecases.md)
     - [Deploying an application using manifest](kubernetes/deploying-app-using-manifest.md)
 - [Threat Model](threat-model/introduction.md)
