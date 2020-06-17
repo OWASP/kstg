@@ -6,6 +6,7 @@
   - [High level overview of common resources](kubernetes/common-resources.md)
   - [Creating a playground with Minikube + Docker](kubernetes/playground.md)
   - [Hands-on common use-cases](kubernetes/hands-on-usecases.md)
+    - [Deploying an application using manifest](kubernetes/deploying-app-using-manifest.md)
 - [Threat Model](threat-model/introduction.md)
   - [Terminology](threat-model/terminology.md)
   - [Threat Actors](threat-model/actors.md)
