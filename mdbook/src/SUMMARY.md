@@ -15,7 +15,7 @@
   - [Using the Threat Model](threat-model/how-to-use.md)
 - [Kubernetes Security Testing](security-testing/index.md)
   - [Discovery](security-testing/discovery/index.md)
-    - [Fingerprinting Master Node](security-testing/discovery/index.md)
+    - [Fingerprinting Master Node](security-testing/discovery/fingerprint-master.md)
     - [Fingerprinting Worker Node](security-testing/discovery/index.md)
     - [Cluster Exposed Service Discovery](security-testing/discovery/index.md)
   - [Authentication and Authorization Testing](security-testing/auth/index.md)

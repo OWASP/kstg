@@ -4,3 +4,6 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Kubernetes Security Testing Guide"
+
+[output.html]
+additional-css = ["css/custom.css"]
