@@ -7,6 +7,38 @@ The *discovery* section cover various techniques and procedures for discovering 
 
 ## Network Discovery
 
-* **TBD** Add table for common master node ports
-* **TBD** Add table for common worker node ports
-* **TBD** Add nmap command to scan and discover master & worker nodes
+Common ports for master node discovery
+
+| Port            | Protocol | Service                                                         |
+| :-------------- | :------- | :-------------------------------------------------------------- |
+| 443, 6443, 8443 | TCP      | Kubernetes API Server (`kube-apiserver`)                        |
+| 8080            | TCP      | Kubernetes API Server insecure port (Listens on localhost only) |
+| 2379, 2380      | TCP      | etcd server                                                     |
+
+Common ports for worker node discovery
+
+| Port        | Protocol | Service                               |
+| :---------- | :------- | :------------------------------------ |
+| 10250       | TCP      | Kubelet                               |
+| 10255       | TCP      | Kubelet read-only port                |
+| 30000-32767 | TCP      | nodePort service port range (default) |
+
+Given the above network services information, Kubernetes master or worker nodes can be discovered by scanning a network CIDR for ports, for example:
+
+To discover master nodes
+
+```bash
+nmap -Pn -sS -sV -p 443,6443,8443,8080,2379,2380 $CIDR
+```
+
+To discover worker nodes
+
+```bash
+nmap -Pn -sS -sV -p 10250,10255 $CIDR
+```
+
+To discover `nodePort` exposed services
+
+```bash
+nmap -Pn -sS -sV -p 30000-32767 $CIDR
+```
